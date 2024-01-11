@@ -1,0 +1,15 @@
+# GitHub
+
+/.github @lokba-pf @prob-pf @sean-pf @sooni-pf
+
+# Documentation
+
+*.md @lokba-pf @prob-pf @sean-pf @sooni-pf
+
+# Frontend
+
+/frontend @lokba-pf @sean-pf
+
+# Backend
+
+/backend @prob-pf @sooni-pf

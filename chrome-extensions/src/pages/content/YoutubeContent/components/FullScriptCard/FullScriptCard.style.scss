@@ -1,0 +1,27 @@
+.youtube-content {
+  &__full-script-card {
+    &--container {
+      width: 100%;
+      height: fit-content;
+      background: #fff;
+      gap: 7px;
+      padding: 4px;
+      word-wrap: break-word;
+
+      &.highlighted {
+        border-left: 4px solid #e5dabe;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    &--item {
+      font-size: 16px;
+      line-height: 1.5;
+      &:hover {
+        cursor: pointer;
+        background: #e5dabe;
+      }
+    }
+  }
+}

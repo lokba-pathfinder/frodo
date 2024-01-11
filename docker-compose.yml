@@ -1,0 +1,46 @@
+version: "3.7"
+
+services:
+  docker-fastapi:
+    container_name: backend
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile
+    environment:
+      - SQLALCHEMY_DATABASE_URL=${SQLALCHEMY_DATABASE_URL}
+      - MY_OPENAI_KEY=${MY_OPENAI_KEY}
+      - ELASTIC_SEARCH_URL=${ELASTIC_SEARCH_URL}
+    restart: always
+    networks:
+      - frodo-network
+
+  frontend:
+    depends_on:
+      - docker-fastapi
+    container_name: frontend
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - frodo-network
+
+  nginx-https:
+    image: nginx:1.25.2
+    container_name: nginx-https-container
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx-https/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt
+    depends_on:
+      - frontend
+    networks:
+      - frodo-network
+
+networks:
+  frodo-network:
+    driver: bridge

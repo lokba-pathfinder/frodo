@@ -1,0 +1,54 @@
+.searchItem-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f8f8fe;
+  }
+}
+
+.searchItem-container-active {
+  background: #e9e9fc;
+
+  &:hover {
+    background: #e9e9fc;
+  }
+}
+
+.searchItem-img {
+  width: 70px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.searchItem-contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.searchItem-title {
+  font-size: 12px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.searchItem-info {
+  display: flex;
+  gap: 3px;
+
+  > p {
+    font-size: 9px;
+    font-weight: 500;
+    color: #606060;
+  }
+}

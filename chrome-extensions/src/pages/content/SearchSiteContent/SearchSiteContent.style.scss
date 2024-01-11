@@ -1,0 +1,13 @@
+@import '@pages/content/SearchSiteContent/components/SearchItem/SearchItem.style.scss';
+@import '@pages/content/SearchSiteContent/components/SearchList/SearchList.style.scss';
+@import '@pages/content/SearchSiteContent/components/SummaryScript/SummaryScript.style.scss';
+@import '@pages/content/SearchSiteContent/components/EmptyScreen/EmptyScreen.style.scss';
+
+.searchSiteContent-container {
+  width: 372px;
+  height: 622px;
+  margin: 0 auto 24px;
+  background: white;
+  border: 1px solid #d9d3d3;
+  border-radius: 26px;
+}

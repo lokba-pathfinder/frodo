@@ -1,0 +1,1 @@
+nohup python -u -m data_preparation.insert_video_list -s ${1} > logs/${1%.*}_log.txt &

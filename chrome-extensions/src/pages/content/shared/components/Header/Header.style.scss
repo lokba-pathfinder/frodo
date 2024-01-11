@@ -1,0 +1,32 @@
+.pinnect-ai-header {
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.pinnect-ai-title {
+  > a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+
+    &:hover,
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
+
+    > img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

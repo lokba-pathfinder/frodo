@@ -1,0 +1,33 @@
+.youtube-content {
+  &__icon-button {
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 25px;
+    border: 0.5px solid #d9d9d9;
+    background: #e5dabe;
+    cursor: pointer;
+    display: flex;
+    gap: 6px;
+    width: fit-content;
+    height: 36px;
+    align-items: center;
+    font-size: 14px;
+    line-height: normal;
+
+    &--active {
+      box-sizing: border-box;
+      padding: 8px;
+      border-radius: 25px;
+      border: 0.5px solid #d9d9d9;
+      background: #f6c744;
+      cursor: pointer;
+      display: flex;
+      gap: 6px;
+      width: fit-content;
+      height: 36px;
+      align-items: center;
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+}

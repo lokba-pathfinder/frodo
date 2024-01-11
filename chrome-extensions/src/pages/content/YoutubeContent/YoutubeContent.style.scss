@@ -1,0 +1,36 @@
+@import '@pages/content/YoutubeContent/components/FullScriptCard/FullScriptCard.style.scss';
+@import '@pages/content/YoutubeContent/components/IconButton/IconButton.style.scss';
+@import '@pages/content/YoutubeContent/components/SummaryScriptCard/SummaryScriptCard.style.scss';
+@import '@pages/content/YoutubeContent/components/YoutubeContentContainer/YoutubeContentContainer.style.scss';
+@import '@pages/content/YoutubeContent/components/EmbeddingRequestSection/EmbeddingRequestSection.style.scss';
+
+.youtube-content {
+  &__script-buttons {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__script-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    overflow-y: scroll;
+
+    &--full-scripts {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #d9d9d9;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 12px;
+      gap: 10px;
+      word-wrap: break-word;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

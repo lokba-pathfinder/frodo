@@ -1,0 +1,33 @@
+.youtube-content {
+  &__embedding-request-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    &--request-button {
+      width: 100%;
+      height: 60px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #e9e9fc;
+      color: #606060;
+
+      &:hover {
+        background-color: #e1e1fb;
+        color: black;
+        cursor: pointer;
+      }
+    }
+
+    &--result-message {
+      font-size: 20px;
+      color: #606060;
+    }
+  }
+}
